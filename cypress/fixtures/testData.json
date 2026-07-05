@@ -1,0 +1,12 @@
+{
+  "name": "Alejo",
+  "lastName": "Ortiz",
+  "dateOfBirth":"04/08/1998",
+  "country":"United States",
+  "state":"Nevada",
+  "city": "Las Vegas",
+  "zipCode":"88901", 
+  "email": "alejoortiz_98@outlook.com",
+  "pwd": "alejoortiz"
+  
+}
