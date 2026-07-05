@@ -26,4 +26,6 @@ describe('Login Functionality', function(){
         cy.get('[name="email"]').type(testData.wrongEmail);
         cy.get('[name="password"]').type(testData.Wrongpwd);
         cy.get('.btn').click();
+
+    })
 })
