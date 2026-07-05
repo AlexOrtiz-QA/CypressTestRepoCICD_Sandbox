@@ -12,7 +12,7 @@ describe('Registry Functionality', function(){
 
     it('Unsuccessfull Register', function(){
         cy.visit('https://demo.realworld.show/');
-        
+        cy.get(':nth-child(3) > .nav-link');
     })
 
 
