@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-05T07:10:38.431Z",
+    "end": "2026-07-05T07:10:44.055Z",
+    "duration": 5624,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "97af8936-861e-484f-801e-e4047aa56cad",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc02_Login.cy.js",
+      "file": "cypress\\e2e\\Tc02_Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "75872c25-f1f3-46ba-84a3-0985dbf00be1",
+          "title": "Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Unsuccessfull Login",
+              "fullTitle": "Login Functionality Unsuccessfull Login",
+              "timedOut": null,
+              "duration": 2833,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.realworld.show/');\ncy.get('.container > .nav > :nth-child(2) > .nav-link').click();\ncy.get('[name=\"email\"]').type(testData.wrongEmail);\ncy.get('[name=\"password\"]').type(testData.wrongPwd);\ncy.get('.btn').click();\ncy.get('.error-messages > li');",
+              "err": {},
+              "uuid": "5839e23e-8f3c-4d6b-a018-d3dd0f4f340a",
+              "parentUUID": "75872c25-f1f3-46ba-84a3-0985dbf00be1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successfull Login",
+              "fullTitle": "Login Functionality Successfull Login",
+              "timedOut": null,
+              "duration": 1139,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.realworld.show/');\ncy.get('.container > .nav > :nth-child(2) > .nav-link').click();\ncy.get('[name=\"email\"]').type(testData.email);\ncy.get('[name=\"password\"]').type(testData.pwd);\ncy.get('.btn').click();",
+              "err": {},
+              "uuid": "2d530960-4845-4299-9a63-00f1d804f295",
+              "parentUUID": "75872c25-f1f3-46ba-84a3-0985dbf00be1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5839e23e-8f3c-4d6b-a018-d3dd0f4f340a",
+            "2d530960-4845-4299-9a63-00f1d804f295"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3972,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
