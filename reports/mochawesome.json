@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-05T05:43:44.064Z",
+    "end": "2026-07-05T05:43:52.062Z",
+    "duration": 7998,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f4e2140b-9dba-4512-a7c1-8421bd2bae4f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc01_CreateUser.cy.js",
+      "file": "cypress\\e2e\\Tc01_CreateUser.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea3fec19-4948-4d95-9d06-d639ddace105",
+          "title": "Registry Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Unsuccessfull Register",
+              "fullTitle": "Registry Functionality Unsuccessfull Register",
+              "timedOut": null,
+              "duration": 2888,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.realworld.show/');\ncy.get(':nth-child(3) > .nav-link');",
+              "err": {},
+              "uuid": "40b5fdae-1a36-4558-9c9f-ccdd48f3757c",
+              "parentUUID": "ea3fec19-4948-4d95-9d06-d639ddace105",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "40b5fdae-1a36-4558-9c9f-ccdd48f3757c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2888,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

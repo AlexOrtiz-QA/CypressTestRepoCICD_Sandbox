@@ -1,12 +1,14 @@
 {
   "name": "Alejo",
   "lastName": "Ortiz",
+  "userName": "MyUserName67",
   "dateOfBirth":"04/08/1998",
   "country":"United States",
   "state":"Nevada",
   "city": "Las Vegas",
   "zipCode":"88901", 
   "email": "alejoortiz_98@outlook.com",
+  "wrongEmail":"alejoortiz:98qoutlook.com",
   "pwd": "alejoortiz"
   
 }

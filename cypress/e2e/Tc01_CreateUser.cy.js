@@ -10,9 +10,13 @@ describe('Registry Functionality', function(){
         });
     });
 
-    it('Unsuccessfull Register', function(){
+    it('Successfull Register', function(){
         cy.visit('https://demo.realworld.show/');
-        cy.get(':nth-child(3) > .nav-link');
+        cy.get(':nth-child(3) > .nav-link').click();
+        cy.get('[name="username"]').type(testData.userName);
+        cy.get('[name="email"]').type(testData.email);
+        cy.get('[name="password"]').type(testData.pwd);
+        cy.get('.btn').click();
     })
 
 

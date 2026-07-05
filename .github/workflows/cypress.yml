@@ -37,3 +37,10 @@ jobs:
         with:
           name: videos
           path: cypress/videos
+      
+      - name: Upload Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:  
+          name: report
+          path: cypress/reports
