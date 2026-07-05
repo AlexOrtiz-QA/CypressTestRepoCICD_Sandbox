@@ -8,8 +8,9 @@ module.exports = defineConfig({
   reporterOptions:{
     reportDir: "reports",
     overwrite: false,
-    html: true,
-    json: true
+    html: false,
+    json: true,
+
   },
   
   
