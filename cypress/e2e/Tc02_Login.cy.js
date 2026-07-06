@@ -17,17 +17,18 @@ describe('Login Functionality', function(){
         cy.get('[name="email"]').type(testData.wrongEmail);
         cy.get('[name="password"]').type(testData.wrongPwd);
         cy.get('.btn').click();
-        cy.get('.error-messages > li')
+        cy.contains("credentials invalid").should("be.visible");
+
 
     })
     
     it('Successfull Login', function(){
         cy.visit('https://demo.realworld.show/');
         cy.get('.container > .nav > :nth-child(2) > .nav-link').click();
-        
         cy.get('[name="email"]').type(testData.email);
         cy.get('[name="password"]').type(testData.pwd);
         cy.get('.btn').click();
+        cy.get(':nth-child(4) > .nav-link').contains(testData.userName);
     })
 
     

@@ -14,7 +14,7 @@ String(now.getHours()).padStart(2, "0")}-${String(now.getMinutes()).padStart(2, 
 // Otherwise it becomes "LOCAL"
 const runNumber = process.env.GITHUB_RUN_NUMBER || "LOCAL";
 
-const reportFileName = `Execution_Report_${timestamp}_Run-${runNumber}`;
+const reportFileName = `PlayGround_Report_${timestamp}_Run-${runNumber}`;
 
 const reportsFolder = "reports/latest";
 
