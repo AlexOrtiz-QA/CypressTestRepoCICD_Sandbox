@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('Login Functionality', function(){
+describe('Radiobuttons Functionality', function(){
 
     let testData;
 

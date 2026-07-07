@@ -1,4 +1,4 @@
-describe('Login Functionality', function(){
+describe('Checkboxes Functionality', function(){
 
     let testData;
 

@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-07T23:10:25.443Z",
+    "end": "2026-07-07T23:10:28.670Z",
+    "duration": 3227,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c90a6ad-8368-4c0b-b39b-9932b1769995",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc04_Checkboxes.cy.js",
+      "file": "cypress\\e2e\\Tc04_Checkboxes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "50143952-6c6f-4999-9a38-816c3c4d6d49",
+          "title": "Checkboxes Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Selecting all options",
+              "fullTitle": "Checkboxes Functionality Selecting all options",
+              "timedOut": null,
+              "duration": 1208,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/');\ncy.get('#checkbox-v-2a').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2b').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2c').should('not.be.checked').check({\n  force: true\n}).should('be.checked');",
+              "err": {},
+              "uuid": "96bf8dea-90ab-46ba-a360-87ef764a6911",
+              "parentUUID": "50143952-6c6f-4999-9a38-816c3c4d6d49",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deselecting all options",
+              "fullTitle": "Checkboxes Functionality Deselecting all options",
+              "timedOut": null,
+              "duration": 694,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/');\ncy.get('#checkbox-v-2a').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2b').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2c').should('not.be.checked').check({\n  force: true\n}).should('be.checked');\ncy.get('#checkbox-v-2a').should('be.checked').uncheck({\n  force: true\n}).should('not.be.checked');\ncy.get('#checkbox-v-2b').should('be.checked').uncheck({\n  force: true\n}).should('not.be.checked');\ncy.get('#checkbox-v-2c').should('be.checked').uncheck({\n  force: true\n}).should('not.be.checked');",
+              "err": {},
+              "uuid": "d39632d2-7821-4689-a8f7-214ec4fdb903",
+              "parentUUID": "50143952-6c6f-4999-9a38-816c3c4d6d49",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96bf8dea-90ab-46ba-a360-87ef764a6911",
+            "d39632d2-7821-4689-a8f7-214ec4fdb903"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1902,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

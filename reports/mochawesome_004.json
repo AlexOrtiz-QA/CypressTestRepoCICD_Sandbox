@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-07-07T23:10:30.483Z",
+    "end": "2026-07-07T23:10:48.869Z",
+    "duration": 18386,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "88af4b0a-b4e2-45fb-b2ce-89b3848cb454",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Tc05_Dropdowns.cy.js",
+      "file": "cypress\\e2e\\Tc05_Dropdowns.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "846db9e4-757a-4f36-bbbb-70286d79887d",
+          "title": "Dropdowns Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Static dropdown smh",
+              "fullTitle": "Dropdowns Functionality Static dropdown smh",
+              "timedOut": null,
+              "duration": 1002,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://seleniumbase.io/demo_page');\ncy.get('[name=\"selectName\"]').select('Set to 75%').should('have.value', '75%');",
+              "err": {},
+              "uuid": "49111057-3ec8-4f20-97bd-64a9a6a6b6e0",
+              "parentUUID": "846db9e4-757a-4f36-bbbb-70286d79887d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Hover dropdown smh",
+              "fullTitle": "Dropdowns Functionality Hover dropdown smh",
+              "timedOut": null,
+              "duration": 311,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://seleniumbase.io/demo_page');\ncy.get('#myDropdown').trigger('mouseover');\ncy.contains('Link Two').click({\n  force: true\n});\ncy.get('h3').contains('Link Two Selected');",
+              "err": {},
+              "uuid": "b12c027a-ce6a-4f2c-8df4-6529815ca4be",
+              "parentUUID": "846db9e4-757a-4f36-bbbb-70286d79887d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dynamic dropdown smh",
+              "fullTitle": "Dropdowns Functionality Dynamic dropdown smh",
+              "timedOut": null,
+              "duration": 7228,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://vinothqaacademy.com/drop-down/');\ncy.wait(3500);\ncy.get('#select2-FromAccount-container').click();\ncy.get('.select2-results').contains('8400045 Bal - $8,758.78').click();",
+              "err": {},
+              "uuid": "6066bbbc-d7f4-42d1-9fe3-315770455230",
+              "parentUUID": "846db9e4-757a-4f36-bbbb-70286d79887d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiple Select dropdown smh",
+              "fullTitle": "Dropdowns Functionality Multiple Select dropdown smh",
+              "timedOut": null,
+              "duration": 5048,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://vinothqaacademy.com/drop-down/');\ncy.wait(3500);\ncy.get('.select2-selection.select2-selection--multiple').click();\ncy.get('.select2-results').contains('Python').click();\ncy.get('.select2-selection.select2-selection--multiple').click();\ncy.get('.select2-results').contains('JavaScript').click();",
+              "err": {},
+              "uuid": "a6e1ff54-51e1-440e-949c-090965d85347",
+              "parentUUID": "846db9e4-757a-4f36-bbbb-70286d79887d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49111057-3ec8-4f20-97bd-64a9a6a6b6e0",
+            "b12c027a-ce6a-4f2c-8df4-6529815ca4be",
+            "6066bbbc-d7f4-42d1-9fe3-315770455230",
+            "a6e1ff54-51e1-440e-949c-090965d85347"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13589,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
